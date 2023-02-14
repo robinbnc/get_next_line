@@ -1,6 +1,6 @@
 # get_next_line
 
-| Project Name | Inception |
+| Project Name | get_next_line |
 | :-: | :-: |
 | Description | Reading a file descriptor line by line using a buffer |
 | Technologies | <a href="#"><img alt="C" src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white&style=for-the-badge"></a> |
