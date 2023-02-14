@@ -5,7 +5,7 @@
 | Description | Reading a file descriptor line by line using a buffer |
 | Technologies | <a href="#"><img alt="C" src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white&style=for-the-badge"></a> |
 | External libraries | read(), malloc(), free() |
-| Final grade | 125/125 |
+| Final grade | 100/100 |
 
 ## Usage
 ```
@@ -17,13 +17,15 @@ Now insert the following code inside the file test.c :
 ```c
 #include "get_next_line_bonus.h"
 #include <stdio.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 int main(int argc, char *argv[])
 {
   char  *line;
   int fd;
  
-  if (argc != 1)
+  if (argc != 2)
     return 1;
   fd = open(argv[1], O_RDONLY);
   if (fd == -1)
